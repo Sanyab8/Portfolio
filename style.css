@@ -292,29 +292,38 @@ span {
   width: 100%;
 }
 
-.skills-container i {
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+  gap: 0.6rem;
+}
+
+.skill i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 7rem;
   height: 7rem;
 
   font-size: 3rem;
-  padding: 1rem;
-
   background: transparent;
   border: 2px solid var(--main-color);
   border-radius: 50%;
   color: var(--main-color);
-
-  margin: 3rem 0.5rem;
 }
 
-.skills-container i span {
-  font-size: 1.2rem;
-  margin-top: 0.4rem;
+.skill span {
+  font-size: 1.4rem;
+  color: var(--text-color);
 }
 
 .skills-container i:hover {
