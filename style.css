@@ -323,12 +323,9 @@ span {
 
 .skill span {
   font-size: 1.4rem;
-<<<<<<< HEAD
-  font-weight:bold;
+  font-weight: bold;
   margin-bottom: 50px;
-=======
   color: var(--text-color);
->>>>>>> fe436a8a283c25c1f2994ebf04e2987ae3c72b1a
 }
 
 .skills-container i:hover {
@@ -475,6 +472,104 @@ span {
 
 .projects-card .heading span {
   margin: 3rem 0;
+}
+
+.experience {
+  background: var(--bg-color);
+  padding: 8rem 15%;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-box:hover {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.experience-box {
+  background: #0d0d0d;
+  border: 1.5px solid rgba(12, 234, 60, 0.35);
+  border-left: 5px solid var(--main-color);
+  border-radius: 1.6rem;
+  padding: 2.4rem 2.8rem;
+  box-shadow: none;
+  transition: 0.25s ease;
+}
+
+.experience-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--main-color);
+}
+
+.experience-box i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(270deg, #0cea3c 10%, rgb(6, 128, 184) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.experience-box h3 {
+  font-size: 2.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.experience-box span {
+  display: block;
+  font-size: 1.7rem;
+  color: #d8d8d8;
+  margin-bottom: 0.6rem;
+}
+
+.experience-date {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--main-color);
+  margin-bottom: 1.4rem;
+}
+
+.experience-box ul {
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.experience-box ul li {
+  font-size: 1.55rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 6rem 8%;
+  }
+
+  .experience-box {
+    padding: 2rem;
+  }
+
+  .experience-box h3 {
+    font-size: 2.3rem;
+  }
+
+  .experience-box span,
+  .experience-date,
+  .experience-box ul li {
+    font-size: 1.45rem;
+  }
 }
 
 .contact {
