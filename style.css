@@ -572,6 +572,48 @@ span {
   }
 }
 
+.achievements {
+  background: var(--second-bg-color);
+  padding: 6rem 15%;
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-box {
+  background: #0d0d0d;
+  border: 1.5px solid rgba(12, 234, 60, 0.3);
+  border-radius: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.achievement-box i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.achievement-box h3 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.achievement-box p {
+  font-size: 1.4rem;
+  color: #dcdcdc;
+  line-height: 1.6;
+}
+
+.achievement-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--main-color);
+  box-shadow: 0 0 15px rgba(12, 234, 60, 0.2);
+}
 .contact {
   background: var(--second-bg-color);
 }
