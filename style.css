@@ -573,46 +573,61 @@ span {
 }
 
 .achievements {
-  background: var(--second-bg-color);
-  padding: 6rem 15%;
+  background: var(--bg-color); /* match projects/experience flow */
+  padding: 8rem 15%;
 }
 
+/* fix giant heading issue */
+.achievements .heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* grid layout */
 .achievements-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
+/* card */
 .achievement-box {
   background: #0d0d0d;
   border: 1.5px solid rgba(12, 234, 60, 0.3);
   border-radius: 2rem;
-  padding: 2.5rem;
+  padding: 3rem 2.5rem;
   text-align: center;
-  transition: 0.25s ease;
+  transition: all 0.25s ease;
+  cursor: pointer;
 }
 
+/* icon */
 .achievement-box i {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
   color: var(--main-color);
 }
 
+/* title */
 .achievement-box h3 {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
 }
 
+/* description */
 .achievement-box p {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   color: #dcdcdc;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* hover (cleaner than before) */
 .achievement-box:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.02);
   border-color: var(--main-color);
-  box-shadow: 0 0 15px rgba(12, 234, 60, 0.2);
+  box-shadow: 0 0 20px rgba(12, 234, 60, 0.25);
 }
 .contact {
   background: var(--second-bg-color);
