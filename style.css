@@ -70,6 +70,12 @@ span {
   color: transparent;
 }
 
+.highlight {
+  background: linear-gradient(270deg, #0cea3c 10%, rgb(6, 128, 184) 100%);
+  background-clip: text;
+  color: transparent;
+  }
+
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -115,7 +121,7 @@ span {
   align-items: center;
   gap: 15rem;
   padding-top: 5rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .home-content {
