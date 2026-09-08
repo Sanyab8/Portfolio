@@ -21,9 +21,10 @@ html {
   --text-color: #ffffff;
   --muted-text: rgba(255, 255, 255, 0.78);
   --main-color: #0cea3c;
+  --green-transparent: #0cea3c2d;
   --green-soft: #0cea3c;
   --green-mid: #0cea3c;
-  --blue-color: rgb(6, 128, 184);
+  --blue-color: rgba(6, 128, 184, 0.545);
   --border-color: rgba(12, 234, 60, 0.28);
   --black-hover: #050607;
 }
@@ -137,10 +138,10 @@ section {
   justify-content: center;
   gap: 3.4rem;
   background:
-    radial-gradient(circle at 12% 50%, rgba(12, 234, 60, 0.14), transparent 28%),
-    radial-gradient(circle at 50% 0%, rgba(6, 128, 184, 0.16), transparent 26%),
+    radial-gradient(circle at 12% 50%, rgba(12, 234, 60, 0.123), transparent 28%),
+    radial-gradient(circle at 50% 0%, rgba(6, 128, 184, 0.236), transparent 26%),
     radial-gradient(circle at 88% 45%, rgba(6, 128, 184, 0.14), transparent 28%),
-    radial-gradient(circle at 50% 100%, rgba(12, 234, 60, 0.13), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(12, 234, 60, 0.116), transparent 30%),
     var(--bg-color);
   position: relative;
   overflow: hidden;
